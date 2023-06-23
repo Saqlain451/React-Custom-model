@@ -1,0 +1,43 @@
+
+.modal-box {
+  width: 50%;
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1rem;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box h1 {
+  color: orangered;
+}
+
+.modal-box p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6rem;
+}
+button {
+  width: 10rem;
+  height: 2.7rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  color: orangered;
+}

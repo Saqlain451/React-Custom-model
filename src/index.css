@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+ 
+}
+
+.btn-create {
+  width: 15rem;
+  height: 3.8rem;
+  font-size: 1.2rem;
+  color: blue;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.parent-modal{
+    width: 100%;
+    height: 100vh;
+}
