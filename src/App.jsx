@@ -1,13 +1,31 @@
 import React, { useState } from "react";
-import Modal from "./modal/modal";
+import Modal from "./modal/Modal";
+
 const App = () => {
   const [isShowModal, setIsShowModal] = useState(false);
 
   return (
-    <div className="parent-modal" onClick={()=>{setIsShowModal(isShowModal? false : true)}}>
-      <button onClick={()=>{setIsShowModal(true)}} className="btn-create"> Create Modal </button>
-      {isShowModal && <Modal btnClick={()=>{setIsShowModal(false)}}/>}
-    </div>
+    <>
+      <button
+        onClick={() => {
+          setIsShowModal(true);
+        }}
+        className="btn-create"
+      >
+       
+        Create Modal
+      </button>
+      {isShowModal && (
+        <Modal
+          btnClick={() => {
+            setIsShowModal(false);
+          }}
+          parentClick={() => {
+            setIsShowModal(false);
+          }}
+        />
+      )}
+    </>
   );
 };
 

@@ -1,8 +1,9 @@
 import React from "react";
 import "./modal.css";
-const Modal = ({btnClick}) => {
+const Modal = ({btnClick,parentClick}) => {
   return (
     <>
+    <div className="modal-wrapper" onClick={parentClick}></div>
       <div className="modal-box">
         <h1>Hi this is modal title</h1>
         <p>

@@ -1,4 +1,12 @@
+.modal-wrapper{
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 
+}
 .modal-box {
   width: 50%;
   height: auto;
